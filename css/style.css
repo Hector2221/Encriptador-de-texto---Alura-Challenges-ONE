@@ -68,7 +68,7 @@ body {
 /* mensaje */
 
 .mensaje {
-    width: 400px;
+    width: 395px;
     height: 580px;
     outline: none;
     border: none;
@@ -88,6 +88,28 @@ body {
 
 .contenidoMsj {
     position: relative;
+}
+
+.contenidoMsj__texto {
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+}
+
+.contenidoMsj__texto>h6 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    text-align: center;
+}
+
+.contenidoMsj__texto>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
 }
 
 /* btn */
@@ -121,4 +143,113 @@ body {
     left: 36px;
     color: #0A3871;
     border: 1px solid #0A3871;
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* main */
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        gap: 50px;
+    }
+
+    /* mensaje */
+
+    .mensaje {
+        width: 688px;
+        height: 343px;
+        outline: none;
+        border: none;
+        margin-top: 0px;
+        padding: 32px;
+        border-radius: 32px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        background: #FFFFFF;
+        background-image: none;
+        margin-bottom: 30px;
+    }
+
+    .copiar {
+        position: absolute;
+        bottom: 60px;
+        left: 25%;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .contenidoMsj__texto {
+        position: absolute;
+        top: 60px;
+        left: 29%;
+    }
+}
+
+@media screen and (max-width: 744px) {
+
+    /* main */
+    .main {
+        gap: 30px;
+    }
+
+    /* mensaje */
+
+    .mensaje {
+        width: 327px;
+        height: 343px;
+        outline: none;
+        border: none;
+        margin-top: 0px;
+        padding: 32px;
+        border-radius: 32px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        background: #FFFFFF;
+        background-image: none;
+        margin-bottom: 30px;
+    }
+
+    .copiar {
+        position: absolute;
+        bottom: 60px;
+        left: 25%;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .contenidoMsj__texto {
+        position: absolute;
+        top: 60px;
+        left: 29%;
+    }
+
+    .encriptador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .msjEncriptar {
+        width: 328px;
+    }
+
+    /* botones */
+    .encriptador__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .copiar {
+        width: 279px;
+        bottom: 45px;
+        left: 24px;
+    }
+
+    .contenidoMsj__texto {
+        top: 40px;
+        left: 18px;
+    }
 }

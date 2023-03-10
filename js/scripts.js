@@ -1,6 +1,7 @@
 const codificador = document.querySelector(".msjEncriptar");
 const mensaje = document.querySelector(".mensaje");
 const copiar = document.querySelector(".copiar");
+const texto = document.querySelector(".contenidoMsj__texto");
 copiar.style.display = "none";
 
 function encriptador() {
@@ -30,6 +31,7 @@ function encriptar() {
     if (/^[a-z0-9\s]+$/u.test(codificador.value)) {
       mensaje.style.backgroundImage = "none";
       copiar.style.display = "block";
+      texto.style.display = "none";
       mensaje.textContent = encriptador();
     } else {
       alert("Solo se permite minusculas y sin acento");
@@ -42,6 +44,7 @@ function desencriptar() {
   if (codificador.value !== "") {
     mensaje.style.backgroundImage = "none";
     copiar.style.display = "block";
+    texto.style.display = "none";
     mensaje.textContent = desencriptador();
   } else {
     alert("Nesesita escribir algo para poder desencriptar ");
