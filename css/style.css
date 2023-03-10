@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+.content {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    margin: 40px 0px 25px 84px;
+}
+
+/* main */
+.main {
+    display: flex;
+    margin-right: 35px;
+    gap: 50px;
+}
+
+/* codificador */
+.encriptador {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.msjEncriptar {
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.encriptador__texto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.encriptador__content {
+    display: flex;
+    gap: 24px;
+}
+
+/* mensaje */
+
+.mensaje {
+    width: 400px;
+    height: 580px;
+    outline: none;
+    border: none;
+    margin-top: -90px;
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background: #FFFFFF;
+    background-image: url(../assets/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.contenidoMsj {
+    position: relative;
+}
+
+/* btn */
+
+.button {
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.encriptar {
+    background: #0A3871;
+    color: white;
+}
+
+.desencriptar {
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+.copiar {
+    position: absolute;
+    bottom: 25px;
+    left: 36px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
